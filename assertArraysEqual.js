@@ -1,3 +1,4 @@
+const eqArrays = require('./eqArrays');
 const assertArraysEqual = function (array3, array4) {
   if (eqArrays(array3, array4)) {
     console.log("This two arrays are the same.");
@@ -6,4 +7,4 @@ const assertArraysEqual = function (array3, array4) {
   }
 };
 
-console.log(assertArraysEqual());
+module.exports = assertArraysEqual;
